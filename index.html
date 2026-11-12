@@ -1,13 +1,128 @@
 <!doctype html>
-<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Cocci Hop — Assistance</title><link rel="stylesheet" href="style.css"></head><body>
-<header><img src="icon.png" alt="Icône de Cocci Hop"><h1>Cocci Hop</h1><p class="date">Assistance</p></header>
-<p>Cocci Hop est un jeu pour iPhone et Android : une coccinelle grimpe de feuille en feuille, toujours plus haut.</p>
-<h2>Une question ou un problème ?</h2>
-<p>Écris-nous en ouvrant un message sur <a href="https://github.com/Joranvnp/cocci-hop-site/issues">la page d'assistance</a>. Indique ton modèle de téléphone, la version d'iOS ou d'Android et ce qui s'est passé.</p>
-<h2>Questions fréquentes</h2>
-<p><strong>J'ai acheté « Sans pubs » et les pubs sont revenues.</strong><br>Ouvre les réglages du jeu et touche « Restaurer mes achats ». L'achat est lié à ton compte Apple (iPhone) ou Google (Android).</p>
-<p><strong>Ma progression a disparu.</strong><br>La progression est enregistrée sur ton appareil. Elle est perdue si tu supprimes le jeu.</p>
-<p><strong>Comment être remboursé ?</strong><br>Sur iPhone, les remboursements sont gérés par Apple, sur <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. Sur Android, ils sont gérés par Google Play, depuis ton historique de commandes sur <a href="https://play.google.com/store/account/orderhistory">play.google.com</a>.</p>
-<nav><a href="confidentialite.html">Politique de confidentialité</a></nav>
-</body></html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cocci Hop — le jeu de coccinelle qui saute de feuille en feuille</title>
+<meta name="description" content="Cocci Hop est un jeu de saut arcade sans fin pour iPhone et Android : aide une coccinelle à grimper de feuille en feuille. 13 mondes, 4 modes, jouable d'une main et hors ligne.">
+<meta property="og:title" content="Cocci Hop — saute de feuille en feuille">
+<meta property="og:description" content="Un jeu de saut arcade sans fin, mignon et coloré. 13 mondes, 4 modes de jeu, jouable d'une main.">
+<meta property="og:image" content="https://joranvnp.github.io/cocci-hop-site/img/partage.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0e6b2c">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="barre">
+  <div class="cadre">
+    <a class="marque" href="./"><img src="icon.png" alt="" width="40" height="40">Cocci Hop</a>
+    <nav>
+      <a class="facultatif" href="#jeu">Le jeu</a>
+      <a class="facultatif" href="#modes">Modes</a>
+      <a href="#assistance">Assistance</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="heros">
+  <div class="cadre">
+    <div>
+      <h1 class="titre">Cocci <span>Hop</span></h1>
+      <p class="accroche">Saute de feuille en feuille, toujours plus haut&nbsp;!</p>
+      <p class="sous">Un jeu de saut arcade sans fin, mignon et coloré. Vise, relâche, saute&nbsp;: une partie se joue d'un seul doigt, même hors ligne.</p>
+      <div class="boutons">
+        <span class="magasin" aria-label="Bientôt sur l'App Store">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 12.7c0-2.3 1.9-3.400 2-3.500-1.100-1.600-2.800-1.800-3.400-1.800-1.400-.1-2.800.9-3.500.9s-1.900-.8-3.100-.8c-1.600 0-3.100.9-3.900 2.400-1.700 2.900-.4 7.200 1.200 9.500.8 1.100 1.700 2.400 3 2.400 1.200 0 1.700-.8 3.100-.8s1.900.8 3.100.8c1.300 0 2.100-1.200 2.900-2.300.9-1.300 1.300-2.600 1.300-2.700-.1 0-2.700-1-2.700-4.100zM14.300 5.800c.6-.8 1.100-1.900 1-3-.9 0-2.100.6-2.800 1.400-.6.7-1.100 1.800-1 2.900 1 .1 2.100-.5 2.800-1.300z"/></svg>
+          <span><small>Bientôt sur</small><b>l'App Store</b></span>
+        </span>
+        <span class="magasin" aria-label="Bientôt sur Google Play">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 2.600v18.800c0 .5.500.8.900.5l16-9.400c.4-.2.400-.8 0-1L4.900 2.100c-.4-.3-.9 0-.9.500z"/></svg>
+          <span><small>Bientôt sur</small><b>Google Play</b></span>
+        </span>
+      </div>
+      <p class="gratuit">Gratuit · iPhone et Android · sans compte</p>
+    </div>
+    <div class="scene">
+      <img class="ami a" src="img/butterfly.png" alt="" width="220" height="220">
+      <img class="cocci" src="img/hero.png" alt="La coccinelle de Cocci Hop posée sur une feuille" width="960" height="480">
+      <img class="ami b" src="img/bee.png" alt="" width="220" height="220">
+    </div>
+  </div>
+  <svg class="vague" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40c240 40 480-40 720-10s480 50 720 0v40H0z"/></svg>
+</div>
+
+<section id="jeu">
+  <div class="entete">
+    <h2>Une partie ne ressemble jamais à la précédente</h2>
+    <p>Les feuilles tremblent, glissent, rebondissent ou se dérobent. Le vent te pousse, les guêpes rôdent, les glands tombent. Plus tu montes, plus il faut être précis.</p>
+  </div>
+  <div class="captures" tabindex="0" aria-label="Captures d'écran du jeu">
+    <img src="img/capture-1.jpg" alt="Écran d'accueil de Cocci Hop" width="540" height="977">
+    <img src="img/capture-2.jpg" alt="Capture d'écran du jeu Cocci Hop" width="540" height="977" loading="lazy">
+    <img src="img/capture-3.jpg" alt="Capture d'écran du jeu Cocci Hop" width="540" height="977" loading="lazy">
+    <img src="img/capture-4.jpg" alt="Capture d'écran du jeu Cocci Hop" width="540" height="977" loading="lazy">
+    <img src="img/capture-5.jpg" alt="Capture d'écran du jeu Cocci Hop" width="540" height="977" loading="lazy">
+    <img src="img/capture-6.jpg" alt="Capture d'écran du jeu Cocci Hop" width="540" height="977" loading="lazy">
+    <img src="img/capture-7.jpg" alt="Capture d'écran du jeu Cocci Hop" width="540" height="977" loading="lazy">
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="cadre atouts">
+    <div class="carte"><div class="chiffre">13</div><h3>mondes à traverser</h3><p>Jardin, sous-bois d'automne, cerisier en fleurs, mare aux nénuphars, jungle de minuit… chacun avec ses couleurs et ses pièges.</p></div>
+    <div class="carte"><div class="chiffre">41</div><h3>coccinelles à collectionner</h3><p>Avec 12 chapeaux, 11 traînées, des effets d'atterrissage et des danses de victoire.</p></div>
+    <div class="carte"><div class="chiffre">3</div><h3>boss à affronter</h3><p>Le crapaud, la mante religieuse et le corbeau t'attendent en chemin.</p></div>
+    <div class="carte"><div class="chiffre">1</div><h3>défi chaque jour</h3><p>Un parcours quotidien identique pour tout le monde, des missions et un coffre à ouvrir.</p></div>
+    <div class="carte"><div class="chiffre">3</div><h3>pouvoirs</h3><p>Ralentis le temps, protège-toi dans une bulle ou déclenche un super bond.</p></div>
+    <div class="carte"><div class="chiffre">0</div><h3>connexion requise</h3><p>Pas de compte, pas d'Internet nécessaire : idéal dans les transports.</p></div>
+  </div>
+</section>
+
+<section class="bande" id="modes">
+  <div class="cadre">
+    <div class="entete"><h2>4 façons de jouer</h2><p>Deux minutes devant toi ou envie de battre ton record ? Il y a un mode pour ça.</p></div>
+    <div class="modes">
+      <div class="mode"><h3>Classique</h3><p>Monte le plus haut possible.</p></div>
+      <div class="mode"><h3>Chrono</h3><p>Fais le meilleur score avant la fin du temps.</p></div>
+      <div class="mode"><h3>Zen</h3><p>Aucun danger, juste le plaisir de sauter.</p></div>
+      <div class="mode"><h3>Fragile</h3><p>Chaque feuille ne sert qu'une fois.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="assistance">
+  <div class="cadre">
+    <div class="entete"><h2>Assistance</h2><p>Une question, un problème, une idée ? On te répond par e-mail.</p></div>
+    <div class="aide">
+      <div class="contact">
+        <h3>Écris-nous</h3>
+        <p>Indique ton modèle de téléphone, la version d'iOS ou d'Android et ce qui s'est passé.</p>
+        <a class="courriel" href="mailto:joran.vanpeene@gmail.com?subject=Cocci%20Hop">joran.vanpeene@gmail.com</a>
+      </div>
+      <div>
+        <details open><summary>J'ai acheté « Sans pubs » et les pubs sont revenues</summary><p>Ouvre les réglages du jeu et touche « Restaurer mes achats ». L'achat est lié à ton compte Apple (iPhone) ou Google (Android).</p></details>
+        <details><summary>Ma progression a disparu</summary><p>La progression est enregistrée sur ton appareil. Elle est perdue si tu supprimes le jeu.</p></details>
+        <details><summary>Comment être remboursé ?</summary><p>Sur iPhone, les remboursements sont gérés par Apple, sur <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. Sur Android, ils sont gérés par Google Play, depuis ton historique de commandes sur <a href="https://play.google.com/store/account/orderhistory">play.google.com</a>.</p></details>
+        <details><summary>Le jeu est-il gratuit ?</summary><p>Oui. Il contient des publicités ; un achat unique « Sans pubs » retire les publicités entre les parties.</p></details>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="cadre">
+    <span>© 2026 Cocci Hop</span>
+    <nav>
+      <a href="confidentialite.html">Politique de confidentialité</a>
+      <a href="conditions.html">Conditions d'utilisation</a>
+      <a href="mailto:joran.vanpeene@gmail.com?subject=Cocci%20Hop">Contact</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
