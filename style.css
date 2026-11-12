@@ -6,7 +6,7 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;font:17px/1.6 var(--rond);color:var(--encre);background:var(--feuille)}
-img{max-width:100%;display:block}
+img{max-width:100%;height:auto;display:block}
 a{color:var(--vert)}
 h1,h2,h3{line-height:1.15;margin:0}
 .cadre{max-width:1080px;margin:0 auto;padding:0 24px}
