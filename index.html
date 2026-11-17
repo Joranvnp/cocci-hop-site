@@ -3,16 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Cocci Hop — le jeu de coccinelle qui saute de feuille en feuille</title>
-<meta name="description" content="Cocci Hop est un jeu de saut arcade sans fin pour iPhone et Android : aide une coccinelle à grimper de feuille en feuille. 13 mondes, 4 modes, jouable d'une main et hors ligne.">
-<meta property="og:title" content="Cocci Hop — saute de feuille en feuille">
-<meta property="og:description" content="Un jeu de saut arcade sans fin, mignon et coloré. 13 mondes, 4 modes de jeu, jouable d'une main.">
+<title>Cocci Hop : le jeu de coccinelle qui saute de feuille en feuille</title>
+<meta name="description" content="Cocci Hop est un jeu de saut gratuit, disponible sur iPhone et bientôt sur Android. Aide une coccinelle à grimper de feuille en feuille : 13 mondes, 4 modes, jouable d'un doigt et hors ligne.">
+<meta property="og:title" content="Cocci Hop : saute de feuille en feuille, toujours plus haut">
+<meta property="og:description" content="Le jeu de coccinelle mignon et gratuit, à jouer d'un seul doigt. 13 mondes, 41 coccinelles, 4 modes. Disponible sur iPhone, bientôt sur Android.">
 <meta property="og:image" content="https://joranvnp.github.io/cocci-hop-site/img/partage.jpg">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://joranvnp.github.io/cocci-hop-site/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="apple-itunes-app" content="app-id=6834035549">
 <meta name="theme-color" content="#0e6b2c">
 <link rel="icon" href="icon.png">
 <link rel="apple-touch-icon" href="icon.png">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 
@@ -23,6 +26,7 @@
       <a class="facultatif" href="#jeu">Le jeu</a>
       <a class="facultatif" href="#modes">Modes</a>
       <a href="#assistance">Assistance</a>
+      <a class="telecharger" href="https://apps.apple.com/fr/app/cocci-hop-jeu-de-coccinelle/id6834035549">Télécharger</a>
     </nav>
   </div>
 </header>
@@ -33,18 +37,18 @@
     <div>
       <h1 class="titre">Cocci <span>Hop</span></h1>
       <p class="accroche">Saute de feuille en feuille, toujours plus haut&nbsp;!</p>
-      <p class="sous">Un jeu de saut arcade sans fin, mignon et coloré. Vise, relâche, saute&nbsp;: une partie se joue d'un seul doigt, même hors ligne.</p>
+      <p class="sous">Le petit jeu de saut qu'on lance pour deux minutes et qu'on ne lâche plus. Vise, relâche, grimpe&nbsp;: tout se joue d'un seul doigt, même sans réseau.</p>
       <div class="boutons">
-        <span class="magasin" aria-label="Bientôt sur l'App Store">
+        <a class="magasin" href="https://apps.apple.com/fr/app/cocci-hop-jeu-de-coccinelle/id6834035549" aria-label="Télécharger Cocci Hop dans l'App Store">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 12.7c0-2.3 1.9-3.400 2-3.500-1.100-1.600-2.800-1.800-3.400-1.800-1.400-.1-2.800.9-3.500.9s-1.900-.8-3.100-.8c-1.600 0-3.100.9-3.900 2.400-1.700 2.900-.4 7.200 1.200 9.500.8 1.100 1.700 2.400 3 2.400 1.200 0 1.700-.8 3.100-.8s1.900.8 3.100.8c1.300 0 2.100-1.200 2.900-2.300.9-1.300 1.300-2.600 1.300-2.700-.1 0-2.700-1-2.700-4.100zM14.300 5.800c.6-.8 1.100-1.900 1-3-.9 0-2.100.6-2.800 1.400-.6.7-1.100 1.800-1 2.900 1 .1 2.100-.5 2.800-1.300z"/></svg>
-          <span><small>Bientôt sur</small><b>l'App Store</b></span>
-        </span>
-        <span class="magasin" aria-label="Bientôt sur Google Play">
+          <span><small>Télécharger dans</small><b>l'App Store</b></span>
+        </a>
+        <span class="magasin bientot" aria-label="Bientôt disponible sur Google Play">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 2.600v18.800c0 .5.500.8.900.5l16-9.400c.4-.2.400-.8 0-1L4.900 2.100c-.4-.3-.9 0-.9.500z"/></svg>
           <span><small>Bientôt sur</small><b>Google Play</b></span>
         </span>
       </div>
-      <p class="gratuit">Gratuit · iPhone et Android · sans compte</p>
+      <p class="gratuit">Gratuit · sans compte · jouable hors ligne</p>
     </div>
     <div class="scene">
       <img class="ami a" src="img/butterfly.png" alt="" width="220" height="220">
@@ -55,7 +59,15 @@
   <svg class="vague" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40c240 40 480-40 720-10s480 50 720 0v40H0z"/></svg>
 </div>
 
-<section id="jeu">
+<section class="trois">
+  <div class="cadre etapes">
+    <div class="etape"><span>1</span><h3>Vise</h3><p>Pose le doigt et tire pour choisir la direction et la force du saut.</p></div>
+    <div class="etape"><span>2</span><h3>Relâche</h3><p>La coccinelle s'envole. Atterris sur la feuille suivante sans tomber.</p></div>
+    <div class="etape"><span>3</span><h3>Grimpe</h3><p>Ramasse les gouttes de rosée, bats ton record et débloque de nouveaux mondes.</p></div>
+  </div>
+</section>
+
+<section id="jeu" style="padding-top:0">
   <div class="entete">
     <h2>Une partie ne ressemble jamais à la précédente</h2>
     <p>Les feuilles tremblent, glissent, rebondissent ou se dérobent. Le vent te pousse, les guêpes rôdent, les glands tombent. Plus tu montes, plus il faut être précis.</p>
@@ -94,6 +106,25 @@
   </div>
 </section>
 
+<section class="appel">
+  <div class="cadre">
+    <img src="icon.png" alt="" width="96" height="96" loading="lazy">
+    <h2>Jusqu'où vas-tu monter&nbsp;?</h2>
+    <p>Cocci Hop est gratuit et s'installe en quelques secondes. Ton premier saut est à un doigt d'ici.</p>
+    <div class="boutons">
+      <a class="magasin" href="https://apps.apple.com/fr/app/cocci-hop-jeu-de-coccinelle/id6834035549" aria-label="Télécharger Cocci Hop dans l'App Store">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 12.7c0-2.3 1.9-3.400 2-3.500-1.100-1.600-2.800-1.800-3.400-1.800-1.400-.1-2.800.9-3.500.9s-1.900-.8-3.100-.8c-1.600 0-3.100.9-3.900 2.400-1.700 2.900-.4 7.200 1.200 9.500.8 1.100 1.700 2.400 3 2.400 1.200 0 1.700-.8 3.100-.8s1.900.8 3.100.8c1.300 0 2.100-1.200 2.900-2.300.9-1.300 1.300-2.600 1.300-2.700-.1 0-2.700-1-2.700-4.100zM14.300 5.800c.6-.8 1.100-1.900 1-3-.9 0-2.100.6-2.800 1.400-.6.7-1.100 1.800-1 2.900 1 .1 2.100-.5 2.800-1.300z"/></svg>
+        <span><small>Télécharger dans</small><b>l'App Store</b></span>
+      </a>
+      <span class="magasin bientot" aria-label="Bientôt disponible sur Google Play">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 2.600v18.800c0 .5.500.8.900.5l16-9.400c.4-.2.400-.8 0-1L4.900 2.100c-.4-.3-.9 0-.9.500z"/></svg>
+        <span><small>Bientôt sur</small><b>Google Play</b></span>
+      </span>
+    </div>
+    <p class="gratuit">Sur Android&nbsp;? La version Google Play arrive bientôt.</p>
+  </div>
+</section>
+
 <section id="assistance">
   <div class="cadre">
     <div class="entete"><h2>Assistance</h2><p>Une question, un problème, une idée ? On te répond par e-mail.</p></div>
@@ -105,14 +136,16 @@
       </div>
       <div>
         <details open><summary>J'ai acheté « Sans pubs » et les pubs sont revenues</summary><p>Ouvre les réglages du jeu et touche « Restaurer mes achats ». L'achat est lié à ton compte Apple (iPhone) ou Google (Android).</p></details>
-        <details><summary>Ma progression a disparu</summary><p>La progression est enregistrée sur ton appareil. Elle est perdue si tu supprimes le jeu.</p></details>
+        <details><summary>Le jeu existe-t-il sur Android ?</summary><p>Pas encore. La version Android est en cours de test et arrivera bientôt sur Google Play. Sur iPhone et iPad, le jeu est déjà disponible dans l'App Store.</p></details>
+        <details><summary>Ma progression a disparu</summary><p>Sur iPhone, ta progression est copiée dans ton compte iCloud : connecte-toi au même compte Apple et relance le jeu pour la retrouver. Sans iCloud, elle reste sur ton appareil et disparaît si tu supprimes le jeu.</p></details>
         <details><summary>Comment être remboursé ?</summary><p>Sur iPhone, les remboursements sont gérés par Apple, sur <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. Sur Android, ils sont gérés par Google Play, depuis ton historique de commandes sur <a href="https://play.google.com/store/account/orderhistory">play.google.com</a>.</p></details>
-        <details><summary>Le jeu est-il gratuit ?</summary><p>Oui. Il contient des publicités ; un achat unique « Sans pubs » retire les publicités entre les parties.</p></details>
+        <details><summary>Le jeu est-il gratuit ?</summary><p>Oui, tout le jeu est gratuit. Il contient des publicités ; un achat unique « Sans pubs » retire les publicités entre les parties.</p></details>
       </div>
     </div>
   </div>
 </section>
 </main>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"Cocci Hop","operatingSystem":"iOS","applicationCategory":"GameApplication","inLanguage":"fr","url":"https://joranvnp.github.io/cocci-hop-site/","installUrl":"https://apps.apple.com/fr/app/cocci-hop-jeu-de-coccinelle/id6834035549","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}</script>
 
 <footer>
   <div class="cadre">
